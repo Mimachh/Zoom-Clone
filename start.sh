@@ -1,3 +1,4 @@
+#!/bin/bash
 
 DATABASE_URL=mysql://root:root@host.docker.internal:3308/conferencing npx prisma migrate deploy
 
