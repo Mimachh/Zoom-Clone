@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  my-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: room:v1
+    env_file:
+      - ./.env
+    ports:
+      - "4002:3000"
